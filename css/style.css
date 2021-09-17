@@ -115,4 +115,16 @@ nav ul a {
   font-weight: 600;
   font-size: 1.3em;
 }
+
+#banner3 {
+  margin: 5vh auto 0;
+  height: 25vh;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 /*# sourceMappingURL=style.css.map */
