@@ -7,7 +7,7 @@
       grid-template-columns: repeat(3, 31%);
   -ms-grid-rows: 30vh;
       grid-template-rows: 30vh;
-  background-color: green;
+  background-color: white;
   -webkit-column-gap: 2.1vw;
           column-gap: 2.1vw;
 }
@@ -24,13 +24,51 @@
 
 .grid .card .bottom {
   margin-top: -1vh;
-  padding-top: 1.3vh;
+  padding-top: 2vh;
   width: 100%;
   max-height: 28%;
   font-weight: normal;
-  color: blanchedalmond;
+  font-size: 0.9em;
+  color: whitesmoke;
   text-align: center;
   background-color: black;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 55vw;
+  height: 50vh;
+  margin: 1vh auto 0;
+}
+
+.flex .item {
+  background-color: black;
+  width: 30%;
+  height: 70%;
+  text-align: center;
+}
+
+.flex .item img {
+  width: 100%;
+  height: 70%;
+}
+
+.flex .item .bottom {
+  width: 100%;
+  height: 25%;
+  font-weight: normal;
+  font-size: 0.9em;
+  color: whitesmoke;
+  padding-left: 1vw;
+  padding-top: 1vh;
 }
 
 * {
@@ -38,7 +76,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 header {
@@ -46,20 +84,37 @@ header {
   display: -ms-flexbox;
   display: flex;
   width: 100vw;
-  height: 15vh;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background-color: #52050A;
+  height: 18vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #52050a;
   padding-top: 3vh;
 }
 
 header .logo {
   padding-top: 3vh;
-  width: 50%;
+  padding-left: 2vw;
+  width: 35%;
+  min-width: 0;
 }
 
-header .banner {
+header .logo img {
   width: 50%;
+  height: auto;
+}
+
+header .banner1 {
+  width: 35%;
+  padding-top: 2vh;
+  padding-right: 2vw;
+  min-width: 0;
+}
+
+header .banner1 img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
 nav {
@@ -69,24 +124,6 @@ nav {
   background-color: black;
   height: 5.5vh;
   padding-top: 1.2vh;
-}
-
-nav ul {
-  width: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  list-style-type: none;
-  font-size: 1.3em;
-  font-weight: bold;
-  padding-left: 3vw;
-}
-
-nav ul a {
-  text-decoration: none;
-  color: whitesmoke;
 }
 
 #date {
@@ -104,7 +141,7 @@ nav ul a {
 }
 
 .line {
-  background-color: gray;
+  background-color: #afabab;
   width: 60%;
   height: 7vh;
   margin: 10vh auto 0;
@@ -118,13 +155,84 @@ nav ul a {
 
 #banner3 {
   margin: 5vh auto 0;
-  height: 25vh;
-  width: 50%;
+  height: 10vh;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#banner3 a {
+  height: 10vh;
+}
+
+footer {
+  background-color: black;
+  width: 100vw;
+  height: 20vh;
+  padding-top: 2.5vh;
+}
+
+footer .first-flex {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .first-flex .bottom-list {
+  width: 50%;
+  padding-left: 3vw;
+}
+
+footer .first-flex .bottom-list ul li {
+  padding-left: 2vw;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+footer .first-flex .footer-logo {
+  width: 40%;
+  padding-left: 22vw;
+}
+
+footer .first-flex .footer-logo img {
+  width: 80%;
+}
+
+footer p {
+  padding-top: 3vh;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.nav-list ul, nav ul, footer .first-flex .bottom-list ul {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding-left: 3vw;
+}
+
+.nav-list ul a, nav ul a, footer .first-flex .bottom-list ul a {
+  text-decoration: none;
+  color: whitesmoke;
 }
 /*# sourceMappingURL=style.css.map */

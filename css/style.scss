@@ -1,40 +1,145 @@
-$line_bg_color: gray;
+$line_bg_color: rgb(175, 171, 171);
 $line_width: 60%;
-@import 'grid';
-*{
-     margin: 0;
-     padding: 0;
-    box-sizing: border-box;
-    
-    font-family: 'Ubuntu', sans-serif;
+$footer_bg_color: black;
+@import "grid";
+@import "flex";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Ubuntu", sans-serif;
 }
-header{
-    display: flex;
-    width: 100vw;
-    height: 15vh;
-    justify-content:space-around;
-    background-color: #52050A;
+// header-------------------------------------
+
+header {
+  display: flex;
+  width: 100vw;
+  height: 18vh;
+  justify-content: space-between;
+  background-color: #52050a;
+
+  padding-top: 3vh;
+
+  .logo {
     
     padding-top: 3vh;
-    
-    .logo{
+    padding-left: 2vw;
+    width: 35%;
+    // height: 10vh;
+    min-width: 0;
+    img{
+      width: 50%;
       
-        padding-top: 3vh;
-        width: 50%;
+      height: auto;
+      
+      
+     }
+  }
+  .banner1 {
+    width: 35%;
+    padding-top: 2vh;
+    padding-right: 2vw;
+    min-width: 0;
+    
+    img{
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+
+      
     }
-    .banner{
+  }
+}
+// nav--------
+nav {
+  justify-content: flex-start;
+  background-color: black;
+  height: 5.5vh;
+  padding-top: 1.2vh;
+  @extend .nav-list;
+}
+#date {
+  margin-top: 6vh;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1em;
+  font-weight: bold;
+  color: gray;
+  padding-right: 4vw;
+}
+
+.line {
+  background-color: $line_bg_color;
+  width: $line_width;
+  height: 7vh;
+  margin: 10vh auto 0;
+  p {
+    padding: 2vh 0 0 2vw;
+
+    font-weight: 600;
+
+    font-size: 1.3em;
+  }
+}
+
+#banner3 {
+  margin: 5vh auto 0;
+  height: 10vh;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  a {
+    height: 10vh;
+  }
+}
+
+footer {
+  background-color: $footer_bg_color;
+  width: 100vw;
+  height: 20vh;
+  padding-top: 2.5vh;
+  .first-flex {
+    margin: auto;
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    .bottom-list{
         width: 50%;
-       }
+        padding-left: 3vw;
+        ul{
+            li{
+                padding-left: 2vw;
+                font-size: 0.8em;
+                font-weight: 500;
+            }
+        }
+        @extend .nav-list 
+        
     }
 
-nav{
-    
-    justify-content: flex-start;
-    background-color: black;
-    
-    height: 5.5vh;
-    padding-top: 1.2vh;
-    ul{
+    .footer-logo{
+        width: 40%;
+        padding-left: 22vw;
+        img{
+          width: 80%;
+        }
+    }
+  }
+  p{
+    padding-top: 3vh;
+    color: whitesmoke;
+    text-align: center;
+    font-size:1.2em ;
+  }
+}
+
+
+// inheritance
+.nav-list{
+    ul {
         width: 40%;
         display: flex;
         justify-content: space-around;
@@ -42,41 +147,10 @@ nav{
         font-size: 1.3em;
         font-weight: bold;
         padding-left: 3vw;
-        a{
-            text-decoration: none;
-            color: whitesmoke;
+        a {
+          text-decoration: none;
+          color: whitesmoke;
         }
-        
-    }
-}
-#date{
-    margin-top: 6vh;
-    display: flex;
-    justify-content: flex-end;
-    font-size: 1em;
-    font-weight: bold;
-    color: gray;
-    padding-right: 4vw;
-}
+      }
 
-.line{
-    background-color: $line_bg_color;
-    width: $line_width;
-    height: 7vh ;
-    margin: 10vh auto 0;
-    p{
-        padding: 2vh 0 0 2vw;
-
-        font-weight: 600;
-        
-        font-size: 1.3em;
-    }
-}
-
-#banner3{
-    margin: 5vh auto 0;
-    height: 25vh;
-    width: 50%;
-    display: flex;
-    justify-content: center;
 }
