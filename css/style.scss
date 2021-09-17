@@ -1,0 +1,75 @@
+$line_bg_color: gray;
+$line_width: 60%;
+@import 'grid';
+*{
+     margin: 0;
+     padding: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Ubuntu', sans-serif;
+}
+header{
+    display: flex;
+    width: 100vw;
+    height: 15vh;
+    justify-content:space-around;
+    background-color: #52050A;
+    
+    padding-top: 3vh;
+    
+    .logo{
+      
+        padding-top: 3vh;
+        width: 50%;
+    }
+    .banner{
+        width: 50%;
+       }
+    }
+
+nav{
+    
+    justify-content: flex-start;
+    background-color: black;
+    
+    height: 5.5vh;
+    padding-top: 1.2vh;
+    ul{
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        font-size: 1.3em;
+        font-weight: bold;
+        padding-left: 3vw;
+        a{
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        
+    }
+}
+#date{
+    margin-top: 6vh;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1em;
+    font-weight: bold;
+    color: gray;
+    padding-right: 4vw;
+}
+
+.line{
+    background-color: $line_bg_color;
+    width: $line_width;
+    height: 7vh ;
+    margin: 10vh auto 0;
+    p{
+        padding: 2vh 0 0 2vw;
+
+        font-weight: 600;
+        
+        font-size: 1.3em;
+    }
+}
+
