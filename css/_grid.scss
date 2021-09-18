@@ -1,7 +1,6 @@
 .grid{
     margin: 3vh auto 0;
     width: 60%;
-    // height: 30vh;
     display: grid;
     grid-template-columns: repeat(3,31%);
     grid-template-rows: 30vh;
@@ -28,6 +27,9 @@
             color: whitesmoke;
             text-align: center;
             background-color: black;
+        }
+        a{
+            text-decoration: none;
         }
         
     }
