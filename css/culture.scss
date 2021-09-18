@@ -1,0 +1,95 @@
+$line_bg_color: rgb(175, 171, 171);
+$line_width: 60%;
+$footer_bg_color: black;
+@import "header";
+@import "nav";
+@import "footer";
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+.container{
+
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    .item{
+
+    background-image: url(https://www.erasmus-journal.eu/wp-content/uploads/48331673207_9a29bfdd53_o-1024x515.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    }
+    
+}
+p{
+    padding-top: 2vh;
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15vh;
+}
+
+// Media Queries for Phones with max-width 480px ------------------
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    header {
+        .logo {
+          padding-left: 22%;
+          padding-bottom: 2%;
+          width: 100%;
+          img {
+            width: 80%;
+          }
+        }
+        .banner1 {
+          width: 10%;
+          padding: 0px;
+          visibility: hidden;
+        }
+      }
+    nav {
+      height: 5%;
+      ul {
+        width: 100%;
+      }
+    }
+   
+    footer {
+      height: 30vh;
+      padding-top: 3.5vh;
+      .first-flex {
+        width: 100%;
+        flex-flow: column-reverse;
+        .bottom-list {
+          width: 80%;
+          padding-top: 3vh;
+          ul {
+            width: 100%;
+            li {
+              padding-left: 10vw;
+            }
+          }
+        }
+        .footer-logo {
+          width: 80%;
+          padding-left: 20vw;
+        }
+      }
+      p {
+        padding-top: 5vh;
+        font-size: 1em;
+      }
+    }
+  }
+   // Media Query for Tablets ------------------------------------------
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    nav {
+      ul {
+        width: 90%;
+      }
+    }
+}

@@ -1,0 +1,225 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 18vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #52050a;
+  padding-top: 3vh;
+}
+
+header .logo {
+  padding-top: 3vh;
+  padding-left: 2vw;
+  width: 35%;
+  min-width: 0;
+}
+
+header .logo img {
+  width: 50%;
+  height: auto;
+}
+
+header .banner1 {
+  width: 35%;
+  padding-top: 2vh;
+  padding-right: 2vw;
+  min-width: 0;
+}
+
+header .banner1 img {
+  width: 100%;
+  height: auto;
+}
+
+nav {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: black;
+  height: 5.5vh;
+  padding-top: 1.2vh;
+}
+
+nav ul {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding-left: 3vw;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+  height: 20vh;
+  padding-top: 2.5vh;
+}
+
+footer .first-flex {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .first-flex .bottom-list {
+  width: 50%;
+  padding-left: 3vw;
+}
+
+footer .first-flex .bottom-list ul {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-left: 3vw;
+}
+
+footer .first-flex .bottom-list ul a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+footer .first-flex .bottom-list ul li {
+  padding-left: 2vw;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+footer .first-flex .footer-logo {
+  width: 40%;
+  padding-left: 22vw;
+}
+
+footer .first-flex .footer-logo img {
+  width: 80%;
+}
+
+footer p {
+  padding-top: 3vh;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .item {
+  background-image: url(https://www.erasmus-journal.eu/wp-content/uploads/48331673207_9a29bfdd53_o-1024x515.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+p {
+  padding-top: 2vh;
+  font-size: 1.2em;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15vh;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  header .logo {
+    padding-left: 22%;
+    padding-bottom: 2%;
+    width: 100%;
+  }
+  header .logo img {
+    width: 80%;
+  }
+  header .banner1 {
+    width: 10%;
+    padding: 0px;
+    visibility: hidden;
+  }
+  nav {
+    height: 5%;
+  }
+  nav ul {
+    width: 100%;
+  }
+  footer {
+    height: 30vh;
+    padding-top: 3.5vh;
+  }
+  footer .first-flex {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+  }
+  footer .first-flex .bottom-list {
+    width: 80%;
+    padding-top: 3vh;
+  }
+  footer .first-flex .bottom-list ul {
+    width: 100%;
+  }
+  footer .first-flex .bottom-list ul li {
+    padding-left: 10vw;
+  }
+  footer .first-flex .footer-logo {
+    width: 80%;
+    padding-left: 28vw;
+  }
+  footer p {
+    padding-top: 5vh;
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  nav ul {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=culture.css.map */
